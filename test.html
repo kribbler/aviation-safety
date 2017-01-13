@@ -1,0 +1,67 @@
+<html>
+<head>
+<style type="text/css">
+
+span.tooltips {
+	position: relative;
+	display: inline;
+	cursor: pointer;
+	color: darkblue;
+	width: 100%;
+	text-decoration: underline;
+}
+span.tooltips span {
+	position: absolute;
+	width:150px;
+	/*left: -70px ;*/
+	color: #FFFFFF;
+	background: #000000;
+	line-height: 30px;
+	text-align: center;
+	visibility: hidden;
+	border-radius: 6px;
+	opacity: 0;
+	z-index: 2000;
+	text-align: left;
+	padding: 14px !important;
+	font-size: 14px !important;
+
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+span.tooltips span:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	width: 0; height: 0;
+	border-top: 8px solid #000000;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+span:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.9;
+  bottom: 40px;
+  left: 00%;
+  margin-left: -90px;
+  z-index: 3999;
+  display: inline-block;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  position: absolute;
+}
+</style>
+
+</head>
+<body>
+<div id="xxx" style="margin-top:200px; position:relative">
+<div id="y" style="position:relative; top:20px; background: #ccc">
+weewweegge  oiewfje foiew eoif jefoi<span class="tooltips">CONTINUATION<span><em class="yellow_text">capability</em><br /> noun<br />the action of carrying something on over time or the state of being carried on</span></span>
+</div>
+</div>
+</body>
