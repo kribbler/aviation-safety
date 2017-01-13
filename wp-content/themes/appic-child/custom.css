@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#question_title { 
+	text-transform:uppercase;
+}
+
+
+/* Rev slider */
+.tp-static-layers div {
+opacity: 1 !important;
+}
+
+
+.smallipop-instance.black {
+	font-size:16px;
+}
+

@@ -1,0 +1,43 @@
+.tp-caption.cvt_black {
+color:#000000;
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+word-wrap:break-word;
+font-size:20px;
+font-weight:normal;
+text-align:left;
+display:inline;
+line-height:30px;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.black {
+color:#000;
+text-shadow:none;
+}
+
+.tp-caption.cvt_bold_orange {
+background-color:transparent;
+text-decoration:none;
+font-size:30px;
+font-weight:bold;
+color:#fdb409;
+border-width:0px;
+border-color:rgb(34, 34, 34);
+border-style:none;
+}
+
+.tp-caption.cvt_bold_red {
+background-color:transparent;
+text-decoration:none;
+color:#ff0000;
+font-weight:bold;
+font-size:30px;
+border-width:0px;
+border-color:rgb(255, 0, 0);
+border-style:none;
+}
+

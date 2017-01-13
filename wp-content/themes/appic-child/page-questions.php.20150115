@@ -1,0 +1,534 @@
+<?php
+/*
+ * Template Name: Questions Page
+ */
+
+// hiding breadcrumbs for this template
+ThemeFlags::set('hide_breadcrumbs', true);
+
+//get_header('questions');
+?>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<!--[if lt IE 8]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]--><!--Edge mode for IE8+-->
+<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title><!--Change Title-->
+<meta name="description" content="<?php bloginfo('description'); ?>" /><!--Change content-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Scale a webpage to a 1:1 pixel-->
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() . '/js/jquery.base64.js';?>"></script>
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?> id="body_questions"><?php render_google_analytics_code(); ?>
+<!--[if lt IE 8]>
+	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<header>
+<?php if (get_theme_option('show_top_lines')) : ?>
+	<div class="top-nav">
+		<div class="container">
+			<p class="pull-left inline hidden-phone">
+				<?php echo get_theme_option ('top_line_left_text'); ?>
+			</p>
+			<?php do_action('icl_language_selector'); ?>
+			<p class="pull-right inline">
+				<?php echo get_theme_option ('top_line_right_text'); ?>
+			</p>
+		</div>
+	</div>
+<?php  endif; ?>
+	<div class="main-nav-wrap">
+		<div class="blue-line-wrap">
+			<nav class="main-navbar container">
+				<div class="logo pull-left">
+					<?php get_template_part('includes/templates/logo-link'); ?>
+				</div><!-- .logo -->
+				
+				<div id="logo_right">
+					<?php global $current_user; 
+					if ($current_user){
+						echo $current_user->user_firstname . ' ' . $current_user->last_name . ' logged in. ';
+						echo '<a href="' . wp_logout_url( home_url() ) . '">Logout</a>';
+					}
+					?>
+					<br />
+					<img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-bae-systems.jpg';?>" />
+				</div>
+				<div id="avatar_holder">
+					<script language="JavaScript" type="text/javascript" src="http://vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=4942120&js=1"></script><script language="JavaScript" type="text/javascript">AC_VHost_Embed(4942120,150,200,'',1,1, 2395868, 0,1,0,'b4109d84b9dc48b9d69870cea8ee8efc',9);</script>
+				</div>
+				<div class="clear"></div>
+				
+			</nav>
+
+			
+		</div>
+	</div>
+</header>
+
+<?php
+// call to action block
+$callToActionImage = null;
+if (is_page() || (is_singular('service'))) {
+	if (is_page()) {
+		$caMetaObject = vp_metabox('page_call_action_meta');
+	} else {
+		$caMetaObject = vp_metabox('service_call_action_meta');
+	}
+	
+	$caMetaData = $caMetaObject->meta;
+	if (!empty($caMetaData['image_url'])) {
+		$callToActionImage = $caMetaData['image_url'];
+		$caPrimaryTitleEscaped = !empty($caMetaData['title1']) ? esc_html($caMetaData['title1']) : '';
+		$caSecondaryTitleEscaped = !empty($caMetaData['title2']) ? esc_html($caMetaData['title2']) : '';
+		$caBtnUrl = isset($caMetaData['btn_url']) ? $caMetaData['btn_url'] : '';
+		$caBtnTitleEscaped = $caBtnUrl && !empty($caMetaData['btn_title']) ? esc_html($caMetaData['btn_title']) : '';
+	}
+}
+?>
+<!--
+<section class="action-area-mini">
+	<?php //echo appic_breadcrumbs(); ?>
+
+</section>
+-->
+
+<?php 
+$post_template = get_post_meta($post->ID,'_post_template',true);
+if ($post_template != 'questions-template.php'){?>
+
+	<section class="action-area-mini">
+		<?php //echo appic_breadcrumbs(); ?>
+		<div class="container heading">
+			<div class="row">
+				<div class="span10">
+					<div id="question_title">
+						<?php echo $post->post_title;?>
+					</div>
+				</div>
+				<div class="span2">
+					Course progress <span id="course_progress">100</span>%
+				</div>
+			</div>
+		</div>
+	</section>
+<?php } ?>
+<div class="clearfix"></div>
+<?php
+if (!is_user_logged_in()) {
+	echo do_shortcode( '[wppb-login]' );
+	return false;
+}
+?>
+
+<div class="white-wrap container page-content">
+	<div id="question_titleX"></div>
+	<div id="delayed_question_display"></div>
+	<div id="ajax_p"></div>
+	<div id="right_answer"></div>
+	<div id="wrong_answer"></div>
+	<div id="my_navigation">
+		<div id="navigation_prev">Back</div>
+		<div id="navigation_next">Next</div>
+		<div id="navigation_finish" style="display: none"><a href="<?php echo site_url();?>/certificates/c1/?print=pdf">Get Your Certificate</a></div>
+	</div>
+	<?php if (have_posts()): ?>
+		<?php while(have_posts()) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
+	<?php endif; ?>
+</div>
+
+<div class="clearfix"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	var can_go_next = true;
+	var last_question = <?php echo get_user_last_question();?>; //edit this number to show a specific question
+	var last_question = 10;
+	
+
+
+	do_drag_cross();
+
+	initiate_report();
+	display_question(last_question);
+
+	$('#navigation_next').click(function(){
+		if ( $(this).attr('class') != 'disabled' && can_go_next){
+			last_question++;
+			display_question(last_question);
+		}
+	});
+
+	$('#navigation_prev').click(function(){
+		if ( $(this).attr('class') != 'disabled'){
+			last_question--;
+			display_question(last_question);
+		}
+	});
+
+	function increment_errors_number(){
+		console.log('hereee');
+		$.post(ajaxurl, { action: 'incrementErrorsNumber' }, function(output, is_ok) {
+			console.log(output);
+			if (output >= <?php echo get_option( 'max_wrong_answer' );?>){
+				show_failed_course();
+				return false;
+			}
+		});
+	}
+
+	function show_failed_course(){
+		$('#ajax_p').html('You have failed your test');
+		$('#my_navigation').hide();
+	}
+
+	function show_delayed_content(content){		
+		/*NOT USED*/
+		content = content.split('[delay_show]');
+
+		var total = content.length;
+		var i = 0;
+
+		myLoop();
+		
+		function myLoop () {
+			$('#delayed_question_display').append(content[i]);
+			$('.hidden').show();
+			setTimeout(function () {
+				console.log(i);
+				i++;
+				if (i < total){
+					setTimeout( myLoop, 500 );
+				}
+			}, 1000);
+		}
+	}
+	
+
+	function append_entry(entry){
+		$('#delayed_question_display').append(entry);
+	}
+	function vh_slideBegin(sceneNumber){
+						sayText("Welcome to my website!",1,1,1); 
+					}
+	function vh_sceneLoaded(){
+		console.log('scene loaded');
+	}
+	function display_question(){
+		$.post(ajaxurl, { action: 'getQuestion', last_question: last_question }, function(output, is_ok) {
+			if (is_ok){
+				$('#right_answer').hide();
+				$('#wrong_answer').hide();
+				output = JSON.parse(output);
+
+				console.log('last question:' + last_question);
+				if (last_question == 9){
+					//var script = '<OBJECT id="VHSS" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0" WIDTH=200 HEIGHT=150><PARAM NAME="movie" VALUE="http://content.oddcast.com/vhss/vhss_v5.swf?doc=http%3A%2F%2Fvhss-d.oddcast.com%2Fphp%2FplayScene%2Facc%3D4942120%2Fss%3D2395758%2Fsl%3D0%3Fembedid%3D6b7884b96226a29077fe43d87cf51d44&acc=4942120&bgcolor=0x&embedid=6b7884b96226a29077fe43d87cf51d44"><PARAM NAME=quality VALUE=high><param name="allowScriptAccess" value="always"><PARAM NAME=scale VALUE=noborder><PARAM NAME=bgcolor VALUE="transparent"><PARAM NAME="wmode" VALUE="transparent"><EMBED src="http://content.oddcast.com/vhss/vhss_v5.swf?doc=http%3A%2F%2Fvhss-d.oddcast.com%2Fphp%2FplayScene%2Facc%3D4942120%2Fss%3D2395758%2Fsl%3D0%3Fembedid%3D6b7884b96226a29077fe43d87cf51d44&acc=4942120&bgcolor=0x&embedid=6b7884b96226a29077fe43d87cf51d44" swLiveConnect=true NAME="VHSS" quality=high allowscriptaccess="always" scale=noborder wmode="transparent" WIDTH=200 HEIGHT=150 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>';
+					//$('#avatar_holder').html(script);
+					stopSpeech();
+					sayText(text_to_speak_10,5,1,2);	
+				} else if (last_question == 10){
+					stopSpeech();
+					sayText(text_to_speak_11,5,1,2);	
+				} else if (last_question == 11){
+					stopSpeech();
+					sayText(text_to_speak_12, 5, 1, 2);
+				}	else {
+					//$('#avatar_holder').html('');
+				}
+				//console.log(output);
+				if (!output.max_errors_reached){
+					$('#question_title').html( output.question_title );
+					$('#question_titleX').html( output.question_titleX );
+					//show_delayed_content(output.question_content);
+					$('#ajax_p').html(output.question_content);
+					$('#course_progress').html(output.progress);
+					can_go_next = true;
+
+					//if ($('#question_type') != ''){
+					if (output.question_type != ''){
+						hide_next();
+						var question_type = $('#question_type').val();
+						if (question_type){
+							can_go_next = false;
+						} else {
+							enable_next();
+						}
+						var question_answer = $('#question_answer').val();
+
+						if (question_answer){
+							question_answer = atob(question_answer);
+						}
+						//console.log(question_answer);
+						if (question_type == 'radio'){
+							$('.radio_answer').click(function(){
+								if (question_answer == $('input[name=radio_answer]:checked').val()){
+									can_go_next = true;
+									$('#right_answer').fadeIn('fast');
+									enable_next();
+									stopSpeech();
+									//sayText('excellent!',5,1,2);	
+								} else {
+									increment_errors_number();
+									can_go_next = false;
+									$('#wrong_answer').fadeIn('fast');
+									disable_next();
+									$("input[type=radio]").attr('disabled', true);
+								}
+							})
+						} 
+
+						if (question_type == 'drag_cross'){
+							can_go_next = false;
+							disable_next();
+							do_drag_cross();
+						}
+
+						if (question_type == 'drag_chain_order'){
+							can_go_next = false;
+							disable_next();
+							do_drag_chain_order();
+						}
+					}
+
+					mark_disabled_navigation(output);
+
+					$('.drag_cross_options').live('mouseover',function(){
+				    	$(this).draggable({
+							cursor: 'move',
+							revert: 'invalid',
+							revertDuration: 900,
+							opacity: 0.5,
+							create: function(){$(this).data('position',$(this).position())},
+							start:function(){$(this).stop(true,true)}
+						});
+					});
+
+					$('.drag_chain_options').live('mouseover',function(){
+				    	$(this).draggable({
+							cursor: 'move',
+							revert: 'invalid',
+							revertDuration: 900,
+							opacity: 0.5,
+							create: function(){$(this).data('position',$(this).position())},
+							start:function(){$(this).stop(true,true)}
+						});
+					});
+				} else {
+					show_failed_course();
+				}
+			} else {
+				//console.log('the end?');
+			}
+		});
+	}
+
+	function mark_disabled_navigation(output){
+		if (!output.has_next_question){
+			//$('#navigation_next').addClass('disabled');
+			$('#navigation_next').hide();
+			$('#navigation_finish').show();
+			generate_report();
+		} else {
+			disable_next();
+			console.log(can_go_next);
+			if (can_go_next){
+				console.log('can go next');
+				setTimeout(function (){
+					enable_next();
+				}, <?php echo get_option( 'seconds_to_next' );?> * 1000);
+			}
+		}
+
+		if (!output.has_prev_question){
+			$('#navigation_prev').addClass('disabled');
+		} else {
+			$('#navigation_prev').removeClass('disabled');
+		}
+	}
+
+	function do_drag_cross(){
+		var total_ok = 0;
+
+		$(".droppable").droppable({
+			accept: ".draggable",
+			activeClass: "drp",
+			//tolerance: 'pointer',
+			drop: function(event, ui){
+				//snapToMiddle(ui.draggable,$(this));
+				$(this).addClass('highlight');
+				var dragged_id = $(ui.draggable).attr("id");
+				dragged_html = $(ui.draggable).html();
+				answer = atob($($(this).html()).text());
+
+				if (answer == dragged_html) {
+					$(this).html(answer);
+					$(this).addClass('correctDragCross');
+					$(ui.draggable).hide();
+					total_ok++;
+					if (total_ok == 4){
+						console.log('move forward');
+						$('#right_answer').fadeIn('fast');
+						can_go_next = true;
+						enable_next();
+					}
+				} else {
+					increment_errors_number();
+					$('#wrong_answer').fadeIn('fast');
+					can_go_next = false;
+					$(this).html(answer);
+					$(this).addClass('wrongDragCross');
+					$(ui.draggable).hide();
+					$('.draggable').addClass('disabled');
+					$('.droppable').droppable('disable');
+				}
+				//disable this box to accept other drops
+				$(this).droppable('option', 'disabled', true);
+				$("#drag_" + dragged_id).removeClass('draggable');
+			}
+		});
+	}
+
+	function do_drag_chain_order(){
+		var total_ok = 0;
+
+		$(".droppable").droppable({
+			accept: ".draggable",
+			activeClass: "drp------",
+			//tolerance: 'pointer',
+			drop: function(event, ui){
+				//snapToMiddle(ui.draggable,$(this));
+				$(this).addClass('highlight_chain');
+				var dragged_id = $(ui.draggable).attr("id");
+				dragged_html = $(ui.draggable).html();
+				answer = '<br><br><br>' + atob($($(this).html()).text());
+				console.log(answer);
+				console.log(dragged_html);
+				if (answer == dragged_html) {
+					$(this).html(answer);
+					$(this).addClass('correctDragChain');
+					$(ui.draggable).hide();
+					total_ok++;
+					if (total_ok == 4){
+						console.log('move forward');
+						$('#right_answer').fadeIn('fast');
+						can_go_next = true;
+						enable_next();
+					}
+				} else {
+					increment_errors_number();
+					$('#wrong_answer').fadeIn('fast');
+					can_go_next = false;
+					$(this).html(answer);
+					$(this).addClass('wrongDragChain');
+					$(ui.draggable).hide();
+					$('.draggable').addClass('disabled');
+					$('.droppable').droppable('disable');
+				}
+				//disable this box to accept other drops
+				$(this).droppable('option', 'disabled', true);
+				$("#drag_" + dragged_id).removeClass('draggable');
+			}
+		});
+	}
+
+	function snapToMiddle(dragger, target){
+	    var topMove = target.position().top - dragger.data('position').top + (target.outerHeight(true) - dragger.outerHeight(true)) / 2;
+	    var leftMove= target.position().left - dragger.data('position').left + (target.outerWidth(true) - dragger.outerWidth(true)) / 2;
+	    dragger.animate({top:topMove,left:leftMove},{duration:600,easing:'easeOutBack'});
+	}
+	
+	
+
+	function generate_report(){
+		$.post(ajaxurl, { action: 'generateReport' }, function(output, is_ok) {
+		});
+	}
+
+	function initiate_report(){
+		$.post(ajaxurl, { action: 'initiateReport' }, function(output, is_ok) {
+		});
+	}
+
+	function enable_next(){
+		$('#navigation_next').show();
+		$('#navigation_next').removeClass('disabled');
+	}
+
+	function disable_next(){
+		$('#navigation_next').addClass('disabled');
+	}	
+
+	function hide_next(){
+		$('#navigation_next').hide();
+	}
+
+	document.onkeydown = checkKeycode
+    function checkKeycode(e) {
+        var keycode;
+        if (window.event)
+            keycode = window.event.keyCode;
+        else if (e)
+            keycode = e.which;
+
+        // Mozilla firefox
+        if ($.browser.mozilla) {
+            if (keycode == 116 ||(e.ctrlKey && keycode == 82)) {
+                if (e.preventDefault)
+                {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            }
+        } 
+        // IE
+        else if ($.browser.msie) {
+            if (keycode == 116 || (window.event.ctrlKey && keycode == 82)) {
+                window.event.returnValue = false;
+                window.event.keyCode = 0;
+                window.status = "Refresh is disabled";
+            }
+        }
+    }
+
+
+});
+
+	text_to_speak_10 = "What does Human Factors refer to the study of?";
+	text_to_speak_11 = '...nineteen o three saw the start of the aviation with the wright brothers developing the first plane. Click to view video. ...';
+	text_to_speak_11 += '...In the initial days if the plane had a fault it would almost certainly lead to a crash. ...';
+	text_to_speak_11 += '...modern aircraft today are a lot more complex with advanced systems. ...';
+
+	text_to_speak_12 = "Slide 12 - SHEL MODEL";
+
+function vh_sceneLoaded(){
+	var last_question = <?php echo get_user_last_question();?>;
+	var last_question = 10;
+	console.log(last_question);
+	console.log(text_to_speak_11);
+	
+	if (last_question == 9){
+		sayText(text_to_speak_10,5,1,2);	
+	}
+	else if (last_question == 10){
+		console.log(text_to_speak_11);
+		sayText(text_to_speak_11,5,1,2);	
+	}
+	else if (last_question == 11){
+		console.log('sss');
+		sayText(text_to_speak_12, 5, 1, 2);
+	}
+}
+</script>
+<?php get_footer('questions'); ?>

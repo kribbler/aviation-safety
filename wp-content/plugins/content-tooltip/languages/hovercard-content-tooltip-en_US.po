@@ -1,0 +1,1093 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Content Tooltip v2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-08-23 06:15:24+0000\n"
+"Last-Translator: wpadmin <farhadegza@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: content-tooltip.php:106
+#@ hovercard-content-tooltip
+msgid "Add unlimited labels with related information and HTML content"
+msgstr ""
+
+#: content-tooltip.php:127
+#@ hovercard-content-tooltip
+msgid "ShortCode"
+msgstr ""
+
+#: metabox/tooltip.php:45
+#@ hovercard-content-tooltip
+msgid "Data Source"
+msgstr ""
+
+#: metabox/tooltip.php:51
+#@ hovercard-content-tooltip
+msgid "HTML Content"
+msgstr ""
+
+#: metabox/tooltip.php:52
+#: metabox/tooltip.php:446
+#@ hovercard-content-tooltip
+msgid "Remote URL"
+msgstr ""
+
+#: metabox/tooltip.php:53
+#@ hovercard-content-tooltip
+msgid "oEmbed"
+msgstr ""
+
+#: metabox/tooltip.php:54
+#@ hovercard-content-tooltip
+msgid "HTML + URL"
+msgstr ""
+
+#: metabox/tooltip.php:55
+#@ hovercard-content-tooltip
+msgid "HTML + oEmbed"
+msgstr ""
+
+#: metabox/tooltip.php:71
+#@ hovercard-content-tooltip
+msgid "Print HTML"
+msgstr ""
+
+#: metabox/tooltip.php:66
+#@ hovercard-content-tooltip
+msgid "Link"
+msgstr ""
+
+#: metabox/tooltip.php:67
+#@ hovercard-content-tooltip
+msgid "Label"
+msgstr ""
+
+#: metabox/tooltip.php:65
+#@ hovercard-content-tooltip
+msgid "Span"
+msgstr ""
+
+#: metabox/tooltip.php:68
+#@ hovercard-content-tooltip
+msgid "Div"
+msgstr ""
+
+#: metabox/tooltip.php:103
+#@ hovercard-content-tooltip
+msgid "Link Location"
+msgstr ""
+
+#: metabox/tooltip.php:104
+#@ hovercard-content-tooltip
+msgid "If you have selected <b>Link</b> element type, you can enter a location to go on click event."
+msgstr ""
+
+#: metabox/tooltip.php:180
+#@ hovercard-content-tooltip
+msgid "Advanced"
+msgstr ""
+
+#: metabox/tooltip.php:187
+#@ hovercard-content-tooltip
+msgid "Custom CSS Class"
+msgstr ""
+
+#: metabox/tooltip.php:188
+#@ hovercard-content-tooltip
+msgid "Enter one or more CSS class to add to title element."
+msgstr ""
+
+#: metabox/tooltip.php:69
+#@ hovercard-content-tooltip
+msgid "Image"
+msgstr ""
+
+#: metabox/tooltip.php:432
+#@ hovercard-content-tooltip
+msgid "Remote Data"
+msgstr ""
+
+#: metabox/tooltip.php:439
+#@ hovercard-content-tooltip
+msgid "Cache Duration"
+msgstr ""
+
+#: metabox/tooltip.php:440
+#@ hovercard-content-tooltip
+msgid "Enter minutes to cache remote URL results."
+msgstr ""
+
+#: metabox/tooltip.php:447
+#@ hovercard-content-tooltip
+msgid "Enter a URL so HoverCard loads contents each time page loads."
+msgstr ""
+
+#: metabox/tooltip.php:114
+#@ hovercard-content-tooltip
+msgid "Layout"
+msgstr ""
+
+#: metabox/tooltip.php:421
+#@ hovercard-content-tooltip
+msgid "Width"
+msgstr ""
+
+#: metabox/tooltip.php:144
+#@ hovercard-content-tooltip
+msgid "Right"
+msgstr ""
+
+#: metabox/tooltip.php:143
+#@ hovercard-content-tooltip
+msgid "Left"
+msgstr ""
+
+#: metabox/tooltip.php:142
+#@ hovercard-content-tooltip
+msgid "Bottom"
+msgstr ""
+
+#: metabox/tooltip.php:141
+#@ hovercard-content-tooltip
+msgid "Top"
+msgstr ""
+
+#: metabox/tooltip.php:457
+#@ hovercard-content-tooltip
+msgid "Expiration"
+msgstr ""
+
+#: metabox/tooltip.php:464
+#@ hovercard-content-tooltip
+msgid "Enable Expiration"
+msgstr ""
+
+#: metabox/tooltip.php:471
+#@ hovercard-content-tooltip
+msgid "Expire Date/Time"
+msgstr ""
+
+#: metabox/tooltip.php:478
+#@ hovercard-content-tooltip
+msgid "After Expiration title"
+msgstr ""
+
+#: metabox/init.php:643
+#@ hovercard-content-tooltip
+msgid "Please Try Again"
+msgstr ""
+
+#: metabox/init.php:660
+#@ hovercard-content-tooltip
+msgid "Remove Embed"
+msgstr ""
+
+#: metabox/init.php:666
+#, php-format
+#@ hovercard-content-tooltip
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: helper.php:156
+#@ hovercard-content-tooltip
+msgid "Custom field updated."
+msgstr ""
+
+#: helper.php:157
+#@ hovercard-content-tooltip
+msgid "Custom field deleted."
+msgstr ""
+
+#: helper.php:163
+#@ hovercard-content-tooltip
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: metabox/tooltip.php:31
+#@ hovercard-content-tooltip
+msgid "General"
+msgstr ""
+
+#: metabox/tooltip.php:38
+#@ hovercard-content-tooltip
+msgid "Title Text"
+msgstr ""
+
+#: metabox/tooltip.php:59
+#@ hovercard-content-tooltip
+msgid "Element Type"
+msgstr ""
+
+#: metabox/tooltip.php:70
+#@ hovercard-content-tooltip
+msgid "Link Image"
+msgstr ""
+
+#: metabox/tooltip.php:96
+#@ hovercard-content-tooltip
+msgid "Title Image"
+msgstr ""
+
+#: metabox/tooltip.php:400
+#@ hovercard-content-tooltip
+msgid "Auto Embed"
+msgstr ""
+
+#: metabox/tooltip.php:407
+#@ hovercard-content-tooltip
+msgid "Embed URL"
+msgstr ""
+
+#: metabox/tooltip.php:408
+#@ hovercard-content-tooltip
+msgid "Enter a youtube, twitter, or instagram URL,... Supports services listed at <a href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/Embeds</a>."
+msgstr ""
+
+#: metabox/tooltip.php:414
+#@ hovercard-content-tooltip
+msgid "Height"
+msgstr ""
+
+#: metabox/tooltip.php:415
+#@ hovercard-content-tooltip
+msgid "Set the maximum height of embed contents."
+msgstr ""
+
+#: metabox/tooltip.php:422
+#@ hovercard-content-tooltip
+msgid "Set the maximum width of embed contents."
+msgstr ""
+
+#: content-tooltip.php:91
+#@ hovercard-content-tooltip
+msgid "Tooltips"
+msgstr ""
+
+#: content-tooltip.php:92
+#@ hovercard-content-tooltip
+msgid "Tooltip"
+msgstr ""
+
+#: content-tooltip.php:93
+#: content-tooltip.php:95
+#@ hovercard-content-tooltip
+msgid "Add Tooltip"
+msgstr ""
+
+#: content-tooltip.php:94
+#@ hovercard-content-tooltip
+msgid "All Tooltips"
+msgstr ""
+
+#: content-tooltip.php:96
+#@ hovercard-content-tooltip
+msgid "Edit Tooltip"
+msgstr ""
+
+#: content-tooltip.php:97
+#@ hovercard-content-tooltip
+msgid "New Tooltip"
+msgstr ""
+
+#: content-tooltip.php:98
+#@ hovercard-content-tooltip
+msgid "View Tooltip"
+msgstr ""
+
+#: content-tooltip.php:99
+#@ hovercard-content-tooltip
+msgid "Search Tooltips"
+msgstr ""
+
+#: content-tooltip.php:100
+#@ hovercard-content-tooltip
+msgid "No Tooltips Found"
+msgstr ""
+
+#: helper.php:158
+#@ hovercard-content-tooltip
+msgid "Tooltip updated."
+msgstr ""
+
+#: helper.php:159
+#, php-format
+#@ hovercard-content-tooltip
+msgid "Tooltip restored to revision from %s"
+msgstr ""
+
+#: helper.php:161
+#@ hovercard-content-tooltip
+msgid "Tooltip saved."
+msgstr ""
+
+#: helper.php:162
+#@ hovercard-content-tooltip
+msgid "Tooltip submitted."
+msgstr ""
+
+#: helper.php:163
+#, php-format
+#@ hovercard-content-tooltip
+msgid "Tooltip scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: helper.php:164
+#@ hovercard-content-tooltip
+msgid "Tooltip draft updated."
+msgstr ""
+
+#: metabox/tooltip.php:39
+#@ hovercard-content-tooltip
+msgid "Title for tooltip."
+msgstr ""
+
+#: metabox/tooltip.php:81
+#@ hovercard-content-tooltip
+msgid "White"
+msgstr ""
+
+#: metabox/tooltip.php:85
+#@ hovercard-content-tooltip
+msgid "Black"
+msgstr ""
+
+#: metabox/tooltip.php:87
+#@ hovercard-content-tooltip
+msgid "Blue"
+msgstr ""
+
+#: metabox/tooltip.php:89
+#@ hovercard-content-tooltip
+msgid "Orange"
+msgstr ""
+
+#: metabox/tooltip.php:91
+#@ hovercard-content-tooltip
+msgid "Dark"
+msgstr ""
+
+#: metabox/tooltip.php:121
+#@ hovercard-content-tooltip
+msgid "Min Width"
+msgstr ""
+
+#: metabox/tooltip.php:128
+#@ hovercard-content-tooltip
+msgid "Max Width"
+msgstr ""
+
+#: metabox/tooltip.php:135
+#@ hovercard-content-tooltip
+msgid "Preferred Position"
+msgstr ""
+
+#: metabox/tooltip.php:226
+#@ hovercard-content-tooltip
+msgid "Animation"
+msgstr ""
+
+#: metabox/tooltip.php:233
+#@ hovercard-content-tooltip
+msgid "Easing"
+msgstr ""
+
+#: metabox/tooltip.php:239
+#@ hovercard-content-tooltip
+msgid "jswing"
+msgstr ""
+
+#: metabox/tooltip.php:240
+#@ hovercard-content-tooltip
+msgid "easeInQuad"
+msgstr ""
+
+#: metabox/tooltip.php:241
+#@ hovercard-content-tooltip
+msgid "easeOutQuad"
+msgstr ""
+
+#: metabox/tooltip.php:242
+#@ hovercard-content-tooltip
+msgid "easeInOutQuad"
+msgstr ""
+
+#: metabox/tooltip.php:243
+#@ hovercard-content-tooltip
+msgid "easeInCubic"
+msgstr ""
+
+#: metabox/tooltip.php:244
+#@ hovercard-content-tooltip
+msgid "easeOutCubic"
+msgstr ""
+
+#: metabox/tooltip.php:245
+#@ hovercard-content-tooltip
+msgid "easeInOutCubic"
+msgstr ""
+
+#: metabox/tooltip.php:246
+#@ hovercard-content-tooltip
+msgid "easeInQuart"
+msgstr ""
+
+#: metabox/tooltip.php:247
+#@ hovercard-content-tooltip
+msgid "easeOutQuart"
+msgstr ""
+
+#: metabox/tooltip.php:248
+#@ hovercard-content-tooltip
+msgid "easeInOutQuart"
+msgstr ""
+
+#: metabox/tooltip.php:249
+#@ hovercard-content-tooltip
+msgid "easeInQuint"
+msgstr ""
+
+#: metabox/tooltip.php:250
+#@ hovercard-content-tooltip
+msgid "easeOutQuint"
+msgstr ""
+
+#: metabox/tooltip.php:251
+#@ hovercard-content-tooltip
+msgid "easeInOutQuint"
+msgstr ""
+
+#: metabox/tooltip.php:252
+#@ hovercard-content-tooltip
+msgid "easeInSine"
+msgstr ""
+
+#: metabox/tooltip.php:253
+#@ hovercard-content-tooltip
+msgid "easeOutSine"
+msgstr ""
+
+#: metabox/tooltip.php:254
+#@ hovercard-content-tooltip
+msgid "easeInOutSine"
+msgstr ""
+
+#: metabox/tooltip.php:255
+#@ hovercard-content-tooltip
+msgid "easeInExpo"
+msgstr ""
+
+#: metabox/tooltip.php:256
+#@ hovercard-content-tooltip
+msgid "easeOutExpo"
+msgstr ""
+
+#: metabox/tooltip.php:257
+#@ hovercard-content-tooltip
+msgid "easeInOutExpo"
+msgstr ""
+
+#: metabox/tooltip.php:258
+#@ hovercard-content-tooltip
+msgid "easeInCirc"
+msgstr ""
+
+#: metabox/tooltip.php:259
+#@ hovercard-content-tooltip
+msgid "easeOutCirc"
+msgstr ""
+
+#: metabox/tooltip.php:260
+#@ hovercard-content-tooltip
+msgid "easeInOutCirc"
+msgstr ""
+
+#: metabox/tooltip.php:261
+#@ hovercard-content-tooltip
+msgid "easeInElastic"
+msgstr ""
+
+#: metabox/tooltip.php:262
+#@ hovercard-content-tooltip
+msgid "easeOutElastic"
+msgstr ""
+
+#: metabox/tooltip.php:263
+#@ hovercard-content-tooltip
+msgid "easeInOutElastic"
+msgstr ""
+
+#: metabox/tooltip.php:264
+#@ hovercard-content-tooltip
+msgid "easeInBack"
+msgstr ""
+
+#: metabox/tooltip.php:265
+#@ hovercard-content-tooltip
+msgid "easeOutBack"
+msgstr ""
+
+#: metabox/tooltip.php:266
+#@ hovercard-content-tooltip
+msgid "easeInOutBack"
+msgstr ""
+
+#: metabox/tooltip.php:267
+#@ hovercard-content-tooltip
+msgid "easeInBounce"
+msgstr ""
+
+#: metabox/tooltip.php:268
+#@ hovercard-content-tooltip
+msgid "easeOutBounce"
+msgstr ""
+
+#: metabox/tooltip.php:269
+#@ hovercard-content-tooltip
+msgid "easeInOutBounce"
+msgstr ""
+
+#: metabox/tooltip.php:287
+#@ hovercard-content-tooltip
+msgid "Enable CSS Animations"
+msgstr ""
+
+#: metabox/tooltip.php:288
+#@ hovercard-content-tooltip
+msgid "<br/>These effects will only work in modern browsers if the browser doesn't support css animations the jQuery animations will be used as fallback. <br/> Check demo at <a href=\"http://daneden.me/animate/\">http://daneden.me/animate/</a>."
+msgstr ""
+
+#: metabox/tooltip.php:294
+#@ hovercard-content-tooltip
+msgid "Show CSS Animation"
+msgstr ""
+
+#: metabox/tooltip.php:300
+#: metabox/tooltip.php:347
+#@ hovercard-content-tooltip
+msgid "--- Attention seekers ---"
+msgstr ""
+
+#: metabox/tooltip.php:301
+#: metabox/tooltip.php:348
+#@ hovercard-content-tooltip
+msgid "flash"
+msgstr ""
+
+#: metabox/tooltip.php:302
+#: metabox/tooltip.php:349
+#@ hovercard-content-tooltip
+msgid "bounce"
+msgstr ""
+
+#: metabox/tooltip.php:303
+#: metabox/tooltip.php:350
+#@ hovercard-content-tooltip
+msgid "shake"
+msgstr ""
+
+#: metabox/tooltip.php:304
+#: metabox/tooltip.php:351
+#@ hovercard-content-tooltip
+msgid "tada"
+msgstr ""
+
+#: metabox/tooltip.php:305
+#: metabox/tooltip.php:352
+#@ hovercard-content-tooltip
+msgid "swing"
+msgstr ""
+
+#: metabox/tooltip.php:306
+#: metabox/tooltip.php:353
+#@ hovercard-content-tooltip
+msgid "wobble"
+msgstr ""
+
+#: metabox/tooltip.php:307
+#: metabox/tooltip.php:354
+#@ hovercard-content-tooltip
+msgid "wiggle"
+msgstr ""
+
+#: metabox/tooltip.php:308
+#: metabox/tooltip.php:355
+#@ hovercard-content-tooltip
+msgid "pulse"
+msgstr ""
+
+#: metabox/tooltip.php:309
+#: metabox/tooltip.php:356
+#@ hovercard-content-tooltip
+msgid "--- Flippers ---"
+msgstr ""
+
+#: metabox/tooltip.php:310
+#: metabox/tooltip.php:357
+#@ hovercard-content-tooltip
+msgid "flip"
+msgstr ""
+
+#: metabox/tooltip.php:311
+#@ hovercard-content-tooltip
+msgid "flipInX"
+msgstr ""
+
+#: metabox/tooltip.php:312
+#@ hovercard-content-tooltip
+msgid "flipInY"
+msgstr ""
+
+#: metabox/tooltip.php:313
+#: metabox/tooltip.php:360
+#@ hovercard-content-tooltip
+msgid "--- Fading ---"
+msgstr ""
+
+#: metabox/tooltip.php:314
+#@ hovercard-content-tooltip
+msgid "fadeIn"
+msgstr ""
+
+#: metabox/tooltip.php:315
+#@ hovercard-content-tooltip
+msgid "fadeInUp"
+msgstr ""
+
+#: metabox/tooltip.php:316
+#@ hovercard-content-tooltip
+msgid "fadeInDown"
+msgstr ""
+
+#: metabox/tooltip.php:317
+#@ hovercard-content-tooltip
+msgid "fadeInLeft"
+msgstr ""
+
+#: metabox/tooltip.php:318
+#@ hovercard-content-tooltip
+msgid "fadeInRight"
+msgstr ""
+
+#: metabox/tooltip.php:319
+#@ hovercard-content-tooltip
+msgid "fadeInUpBig"
+msgstr ""
+
+#: metabox/tooltip.php:320
+#@ hovercard-content-tooltip
+msgid "fadeInDownBig"
+msgstr ""
+
+#: metabox/tooltip.php:321
+#@ hovercard-content-tooltip
+msgid "fadeInLeftBig"
+msgstr ""
+
+#: metabox/tooltip.php:322
+#@ hovercard-content-tooltip
+msgid "fadeInRightBig"
+msgstr ""
+
+#: metabox/tooltip.php:323
+#: metabox/tooltip.php:370
+#@ hovercard-content-tooltip
+msgid "--- Bouncing ---"
+msgstr ""
+
+#: metabox/tooltip.php:324
+#@ hovercard-content-tooltip
+msgid "bounceIn"
+msgstr ""
+
+#: metabox/tooltip.php:325
+#@ hovercard-content-tooltip
+msgid "bounceInDown"
+msgstr ""
+
+#: metabox/tooltip.php:326
+#@ hovercard-content-tooltip
+msgid "bounceInUp"
+msgstr ""
+
+#: metabox/tooltip.php:327
+#@ hovercard-content-tooltip
+msgid "bounceInLeft"
+msgstr ""
+
+#: metabox/tooltip.php:328
+#@ hovercard-content-tooltip
+msgid "bounceInRight"
+msgstr ""
+
+#: metabox/tooltip.php:329
+#: metabox/tooltip.php:376
+#@ hovercard-content-tooltip
+msgid "--- Rotating ---"
+msgstr ""
+
+#: metabox/tooltip.php:330
+#@ hovercard-content-tooltip
+msgid "rotateIn"
+msgstr ""
+
+#: metabox/tooltip.php:331
+#@ hovercard-content-tooltip
+msgid "rotateInDownLeft"
+msgstr ""
+
+#: metabox/tooltip.php:332
+#@ hovercard-content-tooltip
+msgid "rotateInDownRight"
+msgstr ""
+
+#: metabox/tooltip.php:333
+#@ hovercard-content-tooltip
+msgid "rotateInUpLeft"
+msgstr ""
+
+#: metabox/tooltip.php:334
+#@ hovercard-content-tooltip
+msgid "rotateInUpRight"
+msgstr ""
+
+#: metabox/tooltip.php:335
+#: metabox/tooltip.php:382
+#@ hovercard-content-tooltip
+msgid "--- Other ---"
+msgstr ""
+
+#: metabox/tooltip.php:336
+#@ hovercard-content-tooltip
+msgid "lightSpeedIn"
+msgstr ""
+
+#: metabox/tooltip.php:337
+#@ hovercard-content-tooltip
+msgid "rollIn"
+msgstr ""
+
+#: metabox/tooltip.php:341
+#@ hovercard-content-tooltip
+msgid "Hide CSS Animation"
+msgstr ""
+
+#: metabox/tooltip.php:358
+#@ hovercard-content-tooltip
+msgid "flipOutX"
+msgstr ""
+
+#: metabox/tooltip.php:359
+#@ hovercard-content-tooltip
+msgid "flipOutY"
+msgstr ""
+
+#: metabox/tooltip.php:361
+#@ hovercard-content-tooltip
+msgid "fadeOut"
+msgstr ""
+
+#: metabox/tooltip.php:362
+#@ hovercard-content-tooltip
+msgid "fadeOutUp"
+msgstr ""
+
+#: metabox/tooltip.php:363
+#@ hovercard-content-tooltip
+msgid "fadeOutDown"
+msgstr ""
+
+#: metabox/tooltip.php:364
+#@ hovercard-content-tooltip
+msgid "fadeOutLeft"
+msgstr ""
+
+#: metabox/tooltip.php:365
+#@ hovercard-content-tooltip
+msgid "fadeOutRight"
+msgstr ""
+
+#: metabox/tooltip.php:366
+#@ hovercard-content-tooltip
+msgid "fadeOutUpBig"
+msgstr ""
+
+#: metabox/tooltip.php:367
+#@ hovercard-content-tooltip
+msgid "fadeOutDownBig"
+msgstr ""
+
+#: metabox/tooltip.php:368
+#@ hovercard-content-tooltip
+msgid "fadeOutLeftBig"
+msgstr ""
+
+#: metabox/tooltip.php:369
+#@ hovercard-content-tooltip
+msgid "fadeOutRightBig"
+msgstr ""
+
+#: metabox/tooltip.php:371
+#@ hovercard-content-tooltip
+msgid "bounceOut"
+msgstr ""
+
+#: metabox/tooltip.php:372
+#@ hovercard-content-tooltip
+msgid "bounceOutDown"
+msgstr ""
+
+#: metabox/tooltip.php:373
+#@ hovercard-content-tooltip
+msgid "bounceOutUp"
+msgstr ""
+
+#: metabox/tooltip.php:374
+#@ hovercard-content-tooltip
+msgid "bounceOutLeft"
+msgstr ""
+
+#: metabox/tooltip.php:375
+#@ hovercard-content-tooltip
+msgid "bounceOutRight"
+msgstr ""
+
+#: metabox/tooltip.php:377
+#@ hovercard-content-tooltip
+msgid "rotateOut"
+msgstr ""
+
+#: metabox/tooltip.php:378
+#@ hovercard-content-tooltip
+msgid "rotateOutDownLeft"
+msgstr ""
+
+#: metabox/tooltip.php:379
+#@ hovercard-content-tooltip
+msgid "rotateOutDownRight"
+msgstr ""
+
+#: metabox/tooltip.php:380
+#@ hovercard-content-tooltip
+msgid "rotateOutUpLeft"
+msgstr ""
+
+#: metabox/tooltip.php:381
+#@ hovercard-content-tooltip
+msgid "rotateOutUpRight"
+msgstr ""
+
+#: metabox/tooltip.php:383
+#@ hovercard-content-tooltip
+msgid "lightSpeedOut"
+msgstr ""
+
+#: metabox/tooltip.php:384
+#@ hovercard-content-tooltip
+msgid "rollOut"
+msgstr ""
+
+#: metabox/tooltip.php:385
+#@ hovercard-content-tooltip
+msgid "hinge"
+msgstr ""
+
+#: metabox/tooltip.php:465
+#@ hovercard-content-tooltip
+msgid "You can schedule this tooltip to automatically disappear from users view on certain date/time."
+msgstr ""
+
+#: metabox/tooltip.php:472
+#@ hovercard-content-tooltip
+msgid "<br/>Select when to disappear tooltip from users view. HoverCard still remains at WordPress admin and you can edit or extend it."
+msgstr ""
+
+#: metabox/tooltip.php:479
+#@ hovercard-content-tooltip
+msgid "Enter some text to display when tooltip is expired. If you don't want to display anything, leave this blank."
+msgstr ""
+
+#: metabox/tooltip.php:75
+#@ hovercard-content-tooltip
+msgid "Theme"
+msgstr ""
+
+#: metabox/tooltip.php:97
+#@ hovercard-content-tooltip
+msgid "If you have selected image element type above, here you should set its image."
+msgstr ""
+
+#: metabox/tooltip.php:122
+#@ hovercard-content-tooltip
+msgid "Enter the minimum width of tooltip (px)"
+msgstr ""
+
+#: metabox/tooltip.php:129
+#@ hovercard-content-tooltip
+msgid "Enter the maximum width of tooltip (px)"
+msgstr ""
+
+#: metabox/tooltip.php:273
+#@ hovercard-content-tooltip
+msgid "Animation Speed"
+msgstr ""
+
+#: metabox/tooltip.php:274
+#@ hovercard-content-tooltip
+msgid "How much time the popup needs to reach it's final animation position and opacity in milliseconds."
+msgstr ""
+
+#: metabox/tooltip.php:82
+#@ hovercard-content-tooltip
+msgid "Transparent White"
+msgstr ""
+
+#: metabox/tooltip.php:83
+#@ hovercard-content-tooltip
+msgid "White Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:84
+#@ hovercard-content-tooltip
+msgid "Transparent White Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:86
+#@ hovercard-content-tooltip
+msgid "Black Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:88
+#@ hovercard-content-tooltip
+msgid "Blue Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:90
+#@ hovercard-content-tooltip
+msgid "Orange Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:92
+#@ hovercard-content-tooltip
+msgid "Dark Fat Shadow"
+msgstr ""
+
+#: metabox/tooltip.php:148
+#@ hovercard-content-tooltip
+msgid "Popup Horizontal offset"
+msgstr ""
+
+#: metabox/tooltip.php:149
+#@ hovercard-content-tooltip
+msgid "Horizontal offset for the popup from the center of the trigger when the popup is aligned left or right."
+msgstr ""
+
+#: metabox/tooltip.php:155
+#@ hovercard-content-tooltip
+msgid "Popup Vertical Offset"
+msgstr ""
+
+#: metabox/tooltip.php:162
+#@ hovercard-content-tooltip
+msgid "Popup Distance"
+msgstr ""
+
+#: metabox/tooltip.php:163
+#@ hovercard-content-tooltip
+msgid "Vertical distance when the popup appears and disappears."
+msgstr ""
+
+#: metabox/tooltip.php:194
+#@ hovercard-content-tooltip
+msgid "Hide On Popup Click"
+msgstr ""
+
+#: metabox/tooltip.php:195
+#@ hovercard-content-tooltip
+msgid "Hide tooltip when it is clicked."
+msgstr ""
+
+#: metabox/tooltip.php:201
+#@ hovercard-content-tooltip
+msgid "Hide On Trigger Click"
+msgstr ""
+
+#: metabox/tooltip.php:202
+#@ hovercard-content-tooltip
+msgid "Hide tooltip when the trigger is clicked."
+msgstr ""
+
+#: metabox/tooltip.php:208
+#@ hovercard-content-tooltip
+msgid "Hide Trigger"
+msgstr ""
+
+#: metabox/tooltip.php:209
+#@ hovercard-content-tooltip
+msgid "Hide the trigger when the popup is shown."
+msgstr ""
+
+#: metabox/tooltip.php:215
+#@ hovercard-content-tooltip
+msgid "Trigger On Click"
+msgstr ""
+
+#: metabox/tooltip.php:216
+#@ hovercard-content-tooltip
+msgid "Disables the hover event for triggers and tooltip will be activated by clicking the trigger. A second click will trigger the default action on the trigger. I.e. open a link."
+msgstr ""
+
+#: metabox/tooltip.php:389
+#@ hovercard-content-tooltip
+msgid "Invert Animation"
+msgstr ""
+
+#: metabox/tooltip.php:390
+#@ hovercard-content-tooltip
+msgid "The popup will move up when an element is hovered and further up when fading out. If you set this to true, the popup will move down when fading out."
+msgstr ""
+
+#: metabox/tooltip.php:156
+#@ hovercard-content-tooltip
+msgid "Vertical offset for the popup."
+msgstr ""
+
+#: helper.php:155
+#: helper.php:160
+#, php-format
+#@ hovercard-content-tooltip
+msgid "Tooltip saved. Shortcode: %s"
+msgstr ""
+
+#: metabox/tooltip.php:280
+#@ hovercard-content-tooltip
+msgid "Remove Delay"
+msgstr ""
+
+#: metabox/tooltip.php:281
+#@ hovercard-content-tooltip
+msgid "How much time the popup needs to clean up from document."
+msgstr ""
+
+#: metabox/tooltip.php:169
+#@ hovercard-content-tooltip
+msgid "Display Inline"
+msgstr ""
+
+#: metabox/tooltip.php:170
+#@ hovercard-content-tooltip
+msgid "Override WordPress behaviour and makes tooltip title to display inline"
+msgstr ""
+
